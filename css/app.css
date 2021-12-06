@@ -1,0 +1,109 @@
+:root{
+    --font-anton:'Anton', sans-serif
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    background-color: black;
+}
+.titulo{
+    color:cadetblue;
+    font-weight: bold;
+    font-family: var(--font-anton);
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.parllax{
+    background: url(../img/fondo.png) fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+.logo{
+    width: 40%;
+    margin: auto;
+}
+.enlaces{
+    width: 30%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.enlaces ul{
+    display:flex;
+    justify-content: space-evenly;
+}
+.enlaces ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.logo img{
+    width: 100%;
+    margin-top: 38%;
+}
+.titulo__musica{
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.titulo__musica .titulo{
+   width: 35%;
+   border:1px solid white;
+   transition: .2s;
+}
+.titulo__musica .titulo img{
+   width: 100%;
+}
+.titulo__musica .titulo:hover{
+   transform:  scale(1,1);
+}
+.video_musical{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.galeria{
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.galeria .fotos{
+    width: 33%;
+    margin: auto;
+    transition: all .2s;
+}
+.galeria .fotos img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    
+ }
+.galeria .fotos img:hover{
+  transform: scale(1.2);
+  margin-bottom: 20px;
+ }
